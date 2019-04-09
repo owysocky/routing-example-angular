@@ -7,4 +7,10 @@ export class AlbumService {
 
   constructor() { }
 
+  getAlbums(){
+    return ALBUMS;
+  }
+
+  
+
 }
