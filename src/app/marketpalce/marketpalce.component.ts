@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Album } from '../models/album.model';
 import { Router } from '@angular/router';
 import { AlbumService } from '../album.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-marketpalce',
@@ -11,8 +12,8 @@ import { AlbumService } from '../album.service';
 })
 export class MarketpalceComponent implements OnInit{
 
-  albums: Album[];
-  
+  albums: FirebaseListObservable<any[]>;
+
   ngOnInit(){
     this.albums = this.albumService.getAlbums();
   }
