@@ -20,11 +20,7 @@ export class AlbumService {
   }
 
   getAlbumById(albumId: number){
-    // for (var i = 0; i < ALBUMS.length; i++) {
-    //   if (ALBUMS[i].id === albumId) {
-    //     return ALBUMS[i];
-    //   }
-    // }
+    return this.database.object('albums/' + albumId);
   }
 
 }
