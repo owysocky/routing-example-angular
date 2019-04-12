@@ -12,6 +12,7 @@ import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { MarketpalceComponent } from './marketpalce/marketpalce.component';
 import { AlbumDetailComponent } from './album-detail/album-detail.component';
+import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -26,11 +27,11 @@ export const firebaseConfig = {
     WelcomeComponent,
     AboutComponent,
     MarketpalceComponent,
-    AlbumDetailComponent
+    AlbumDetailComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
-    routing,
     HttpModule,
     HttpClientModule,
     routing,
